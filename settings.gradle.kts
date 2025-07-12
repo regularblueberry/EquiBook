@@ -9,12 +9,14 @@ rootProject.name = "EquiBook"
 
 pluginManagement {
     repositories {
-        gradlePluginPortal()
-        mavenCentral()
+        gradlePluginPortal() // For most plugins
+        google()            // For Android-related plugins
+        mavenCentral()   
+        maven("https://maven.pkg.jetbrains.space/public/p/compose/dev")
     }
 
     plugins {
-        kotlin("jvm").version(extra["kotlin.version"] as String)
+        kotlin("multiplatform") version "2.2.0"
         id("org.jetbrains.kotlin.plugin.compose").version(extra["kotlin.version"] as String)
         id("org.jetbrains.compose").version(extra["compose.version"] as String)
     }
