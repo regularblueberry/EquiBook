@@ -1,5 +1,5 @@
 # Equi-Book: Serverless Personal Finance Tracker
-![EquiBook Logo](src/commonMain/composeResources/drawable/equibook_logo.svg)
+![EquiBook Logo](resource/drawable/equibook_logo.svg)
 
 ## Project Overview
 
